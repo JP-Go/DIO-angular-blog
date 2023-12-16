@@ -1,0 +1,42 @@
+$pink: #ef709b
+$orange: #fa9372
+$light-gray: #a9adb0
+header
+  background: black
+  width: 100vw
+  height: 4rem
+  padding-left: 3rem
+  padding-right: 1rem
+  display: flex
+  align-items: center
+  .logo
+    margin-right: 2rem
+    border-radius: 100%
+    background: linear-gradient(0deg, $pink 0%, $orange 100%)
+    width: 2.5rem
+    height: 2.5rem
+    color: white
+    display: flex
+    align-items: center
+    justify-content: center
+    font: inherit 2.75rem
+    font-weight: bold
+    box-shadow: $pink 0px 0px 8px
+  nav
+    width: 30%
+    ul
+      display: flex
+      align-items: center
+      justify-content: space-around
+      list-style: none
+      color: $light-gray
+      text-decoration: none
+      li
+        text-transform: uppercase
+        font-weight: 600
+        transition: color 150ms ease
+        &.active
+          color: white
+        &:hover
+          color: white
+          cursor: pointer
